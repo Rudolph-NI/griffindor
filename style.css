@@ -4,13 +4,21 @@ html {
     min-height: 100%;
     position: relative;
 }
-* {
+
+@font-face {
+    font-family: 'Menlo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Menlo Regular'), url('Menlo-Regular.woff') format('woff');
+    }
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Harry Potter', sans-serif;
+     font-family: 'Fantasy', Menlo ; 
     font-size: 20px;
-}
+} */
+
 /*main*/
 body {
     background-color: #fff59d;
@@ -178,4 +186,45 @@ footer {
         right: 35px;
     }
 
+}
+
+/* modificaciones despues del tutorial, modificaciones empiricas*/
+#redes{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.fa-facebook{
+
+    border: 1px solid blue;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: blue;
+    box-shadow: 0 0 30px rgba(0, 100, 255, 0.7);
+}
+.fa-instagram{
+
+    border: 1px solid #ff0080;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #ff0080;
+    box-shadow: 0 0 30px rgba(238, 130, 238, 0.7);
+}
+.fa-linkedin{
+
+    border: 1px solid blue;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: blue;
+    box-shadow: 0 0 30px rgba(0, 100, 255, 0.7);
+}
+
+.fa-brands:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    transition: .4s ease;
 }
