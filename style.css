@@ -29,7 +29,7 @@ body {
 
 section div{
     background-size: cover;
-    background-image: url(hogwarts.jfif);
+    background-image: url(background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #66999;
@@ -43,11 +43,12 @@ footer {
     bottom: 0%;
     color: white;
 }
+/* }
 .prueba {
     height: 1000px;
     background-color: #eeba30;
     margin: 10px;
-}
+} */
 
 /*header*/
 .header {
@@ -188,6 +189,9 @@ footer {
 
 }
 
+h1{
+    text-align: center;
+}
 /* modificaciones despues del tutorial, modificaciones empiricas*/
 #redes{
 
