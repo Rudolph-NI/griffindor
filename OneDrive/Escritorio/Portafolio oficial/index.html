@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+    <title>MyRepository</title>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/941f562e00.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <header class="header">
+        <div class="logo">
+            <img src="letraR.png" alt="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="MyRepository.html">My repository</a></li>
+                <li><a href="#redes">Get in touch</a></li>
+                <li><a href="#LinkAboutMe">About me</a></li>
+                <li><a href="#LinkAboutMe">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+
+            <div class="overlay-content">
+                <a href="MyRepository.html">My repository</a>
+                <a href="#redes">Get in touch</a>
+                <a href="#LinkAboutMe">About me</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="main__encabezado">
+        <div >
+            <p>This is a page made by Rodolfo Gutierrez who's about to jump into the development world</p>
+        </div>
+    </section>
+
+    <h1>I am a system engineer</h1>
+
+    <section id="redes">
+        <h1>Get in touch with me</h1>
+        <i class="fa-brands fa-facebook" style="color: azure;"></i>
+        <i class="fa-brands fa-instagram" style="color: azure;"></i>
+        <a target="_blank" href="https://www.linkedin.com/in/rodolfo-gutierrez552001"><i class="fa-brands fa-linkedin" style="color: azure;" ></i></a>
+    </section>
+
+    <section id="LinkAboutMe">
+        <h1>About me</h1>
+    </section>
+   
+    <br>
+
+    <footer>
+        <p>All rights reserved ©</p>
+    </footer>
+
+
+    <script type="text/javascript" src="nav.js"></script>
+
+</body>
+
+
+</html>
