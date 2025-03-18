@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap');
-@import url('https://fonts.cdnfonts.com/css/harry-potter');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/harry-potter'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
     min-height: 100%;
     position: relative;
+  
+    /* Me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth ;
+      
 }
 
 @font-face {
@@ -11,58 +18,61 @@ html {
     font-weight: normal;
     src: local('Menlo Regular'), url('Menlo-Regular.woff') format('woff');
     }
-/* * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-     font-family: 'Fantasy', Menlo ; 
-    font-size: 20px;
-} */
 
 /*main*/
 body {
-    background-color: #fff59d;
+    background-color: #1CB698;
     margin: 0;
     margin-bottom: 40px;
 
 }
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    Margin: 0 ;
+    padding: 0 ;
+
+}
 
 section div{
-    background-size: cover;
-    background-image: url(background.jpg);
+    background: linear-gradient(to top, rgba(53, 60, 65, 0.8), rgba(53, 60, 65, 0.8)),
+    url(background.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #66999;
-    padding: 30px;
-    color: white;
+    background-size: cover;
+    height: 110vh;
 }
-footer {
-    width: 100%;
-    background-color: #000000;
-    position: absolute;
-    bottom: 0%;
-    color: white;
+
+body .main__encabezado{
+    text-align: center;
+    /* margin-top: 20px; */
+    font-size: 42px;
+    
 }
-/* }
-.prueba {
-    height: 1000px;
-    background-color: #eeba30;
-    margin: 10px;
-} */
+body .main__encabezado div{
+    padding-top: 200px;
+    font-family: 'Work Sans';
+    
+}
 
 /*header*/
 .header {
-    background-color: #740001;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 83px;
-    padding: 5px 10%;
+    background-color: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 20px 0 10px 0;
+    
 }
 
 .header .logo {
     cursor: pointer;
     margin-right: auto;
+    display: block;
+    width: 100px;
+    margin-left: 20px;
 }
 
 .header .logo img{
@@ -76,10 +86,17 @@ footer {
 
 .header .nav-links {
     list-style: none;
+    text-align: right;
+
+    
+
+    
 }
 .header .nav-links li {
     display: inline-block;
     padding: 0 20px;
+    transition: all 1.3s; 
+    
 }
 .header .nav-links li:hover,
 .overlay a:hover {
@@ -96,6 +113,14 @@ footer {
 .header .nav-links li a:hover {
     color: #ffbc0e
 }
+footer {
+    width: 100%;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0%;
+    color: white;
+}
+
 .menu {
     display: none;
 }
@@ -110,7 +135,7 @@ footer {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease 0s
+    transition: all 1.3s ease 0s
 } 
 
 .header .btn button:hover {
