@@ -308,6 +308,12 @@ input{
     #check:checked ~ .NavPadre{
         left: 0;
     }
+
+    /* Bloquear scroll de la página */
+    #check:checked ~ main {
+        height: 100vh;
+        overflow: hidden;
+    }
     .RedesSociales{
         display: none;
     }
