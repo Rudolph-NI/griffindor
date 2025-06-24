@@ -1,59 +1,61 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: sans-serif;
     margin: 0;
 
 }
 
 /* HEADER O NAV*/
-nav{
+nav {
     display: flex;
-    justify-content: space-between;/*en ves de float: right en navpadre*/
-    height: 80px;
-    background-color: rgba(178, 185, 217, 0.769);
+    justify-content: space-between;
+    /*en ves de float: right en navpadre*/
+    height: 100px;
+    background-color: #13d575;
     /* align-items: center; */
     padding: 10px;
     width: 100%;
 }
 
-.logo{
+.logo {
     /* display: flex; */
     /* align-items: center;  */
     line-height: 80px;
     padding: 0 100px;
 
 }
-.logo img{
+
+.logo img {
     height: 60px;
 }
- .NavPadre{
+
+.NavPadre {
     margin-right: 20px;
 }
 
-.NavPadre li{
+.NavPadre li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
-.NavPadre a{
+
+.NavPadre a {
     color: white;
     font-size: 17px 13px;
     border-radius: 3px;
     text-transform: uppercase;
 
 }
-/* .NavPadre a.active,a:hover{
-     background-color: #1b9bff; 
-    transition: .5s;
-} */
+
 /*Checkbtn*/
-.checkbtn{
+.checkbtn {
     font-size: 30px;
     color: blue;
     float: right;
@@ -62,29 +64,44 @@ nav{
     cursor: pointer;
     display: none;
 }
-#check{
+
+#check {
     display: none;
 }
 
 /* NAVS  */
-.NavPadre{
+.NavPadre {
     text-align: right;
     height: 10px;
 }
-nav a{
+
+nav a {
     font-weight: 550;
     padding-right: 10px;
+    transition: all .4s ease-in-out;
 }
-nav a:hover{
-    color: rgb(219, 206, 158);
+
+nav a:hover {
+    color: #000ba5;
 }
-/*Redes sociales*/
-.RedesSociales{
+
+.navDerecha {
+    display: block;
+}
+
+.navDerecha2 {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+}
+
+/*Redes sociales*/
+.RedesSociales {
+    /* display: flex;
+    justify-content: flex-end; */
     font-size: 20px;
 }
-.RedesSociales a{
+
+.RedesSociales a {
     padding: 4px;
     margin: 4px;
     background: #262d6a;
@@ -94,17 +111,18 @@ nav a:hover{
     transition: all .4s ease-in-out;
 
 }
-.RedesSociales a:hover{
-    background: #1f2a38;
+
+.RedesSociales a:hover {
+    /* background: #1f2a38; */
     transform: scale(0.9);
 }
 
 /*Buscar*/
-.buscar{
+.buscar {
     position: relative;
-
 }
-input{
+
+input {
     width: 200px;
     padding: 10px;
     padding-right: 35px;
@@ -112,7 +130,8 @@ input{
     border: 0;
     outline: none;
 }
-.buscar button{
+
+.buscar button {
     background-color: #262d6a;
     padding: 10px 15px;
     border: 0;
@@ -124,7 +143,8 @@ input{
     color: white;
     cursor: pointer;
 }
-.buscar button:hover{
+
+.buscar button:hover {
     background-color: #515686;
 }
 
@@ -133,18 +153,22 @@ input{
     width: 100%;
     /* background-image: url('./imgs/SliderFondo.jpg'); */
     background-color: #f5f5f5;
-    background-size: cover;        /* Estira la imagen para que cubra todo el div */
-    background-repeat: no-repeat;  /* Evita que la imagen se repita */
-    background-position: center;   /* Centra la imagen dentro del div */
+    background-size: cover;
+    /* Estira la imagen para que cubra todo el div */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-position: center;
+    /* Centra la imagen dentro del div */
 
 }
 
-.SliderSon{
+.SliderSon {
     width: 60%;
     margin: auto;
     overflow: hidden;
 }
-.SliderSon ul{
+
+.SliderSon ul {
     display: flex;
     margin: 0;
     padding: 0;
@@ -152,26 +176,46 @@ input{
     animation: cambio 8s infinite;
     animation-direction: alternate;
 }
-.SliderSon li{
+
+.SliderSon li {
     list-style: none;
     width: 100%;
 }
-.SliderSon img{
+
+.SliderSon img {
     width: 100%;
-    display: block; /* Elimina el espacio que deja img como inline-block */
+    display: block;
+    /* Elimina el espacio que deja img como inline-block */
     margin: 0;
     padding: 0;
 }
-@keyframes cambio{
-    0% { margin-left: 0 ; }
-    35% { margin-left: 0 ; }
 
-    40% { margin-left: -100% ; }
-    60% { margin-left: -100% ; }
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
 
-    65% { margin-left: -200% ; }
-    100% { margin-left: -200% ; }
+    35% {
+        margin-left: 0;
+    }
+
+    40% {
+        margin-left: -100%;
+    }
+
+    60% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
 }
+
 /*Slide*/
 
 /* Cuerpo */
@@ -192,12 +236,14 @@ input{
     margin: 20px;
 }
 
-.Mandaditos{
+.Mandaditos {
     align-content: center;
 }
-.Servicios{
+
+.Servicios {
     grid-column: 1/3;
 }
+
 .TitulosH2Main h2 {
     margin-top: 0;
     font-size: 1.5em;
@@ -207,54 +253,64 @@ input{
 
 .CuerpoImagen {
     margin-top: 1px;
-    width: 650px;         /* Que ocupe todo el ancho del bloque */
-    height: 300px;        /* Mantiene proporción de la imagen */
+    width: 650px;
+    /* Que ocupe todo el ancho del bloque */
+    height: 300px;
+    /* Mantiene proporción de la imagen */
     object-fit: contain;
-    border-radius: 8px;  /* Esquinas redondeadas como el bloque */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Igual que el contenedor */
+    border-radius: 8px;
+    /* Esquinas redondeadas como el bloque */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Igual que el contenedor */
 }
 
 /* Footer */
 
-.pie-pagina{
+.pie-pagina {
     width: 100%;
 }
-.pie-pagina .grupo1{
+
+.pie-pagina .grupo1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 45px 0px; /*45 pixeles hacia arriba y 0 pixeles hacia los costados*/
+    padding: 45px 0px;
+    /*45 pixeles hacia arriba y 0 pixeles hacia los costados*/
 
 }
 
-.pie-pagina .grupo1 .box figure{ /*Dentro de la clase box que esta dentro de la clase grupo1 que esta dentro de la clase pie-pagina buscaremos la etiqueta figure*/
+.pie-pagina .grupo1 .box figure {
+    /*Dentro de la clase box que esta dentro de la clase grupo1 que esta dentro de la clase pie-pagina buscaremos la etiqueta figure*/
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;/*centrando horizontalmente*/
-    align-items: center;/*centrando verticalmente*/
+    justify-content: center;
+    /*centrando horizontalmente*/
+    align-items: center;
+    /*centrando verticalmente*/
 }
 
-.pie-pagina .grupo1 .box figure img{
+.pie-pagina .grupo1 .box figure img {
     width: 250px;
 
 }
 
-.pie-pagina .grupo1 .box h2{
+.pie-pagina .grupo1 .box h2 {
     color: black;
     margin-bottom: 25px;
     font-size: 20px;
 }
-.pie-pagina .grupo1 .box p{
+
+.pie-pagina .grupo1 .box p {
     color: black;
     margin-bottom: 10px;
 
 }
 
-.pie-pagina .grupo1 .redSocial a{
+.pie-pagina .grupo1 .redSocial a {
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -264,92 +320,113 @@ input{
     margin-right: 10px;
     background-color: #0d2033;
     text-align: center;
-    transition: all 300ms ease;/*le daremos transision a todos los elementos en 300 milisegunods y con efecto ease*/
+    transition: all 300ms ease;
+    /*le daremos transision a todos los elementos en 300 milisegunods y con efecto ease*/
 
 }
-.pie-pagina .grupo1 .redSocial a:hover{
+
+.pie-pagina .grupo1 .redSocial a:hover {
     color: aqua;
 }
-.pie-pagina .grupo2{
-    background-color: rgb(162, 22, 22);
+
+.pie-pagina .grupo2 {
+    background-color: #bd102d;
     padding: 15px 10px;
     text-align: center;
     color: white;
 }
-.pie-pagina .grupo2 small{
+
+.pie-pagina .grupo2 small {
     font-size: 15px;
 }
 
 /* Media Queries when mobile*/
 @media(max-width: 1000px) {
 
-    .checkbtn   {
+    .checkbtn {
         display: inline-block;
         position: absolute;
         right: 20px;
+        color: #262d6a;
     }
-    .NavPadre{
+
+    .NavPadre {
         display: flex;
         flex-direction: column;
         position: fixed;
         width: 100%;
         height: 100vh;
         background-color: #2c3e50;
-        top: 80px;
+        top: 100px;
         left: -100%;
         text-align: center;
         transition: all .5s;
 
     }
-    .NavPadre a{
+
+    .NavPadre a {
         margin: 5px 0;
         line-height: 30px;
     }
-    #check:checked ~ .NavPadre{
+
+
+    #check:checked~.navDerecha .NavPadre {
         left: 0;
+
     }
 
-    /* Bloquear scroll de la página */
-    #check:checked ~ main {
-        height: 100vh;
+    body.no-scroll {
         overflow: hidden;
+        height: 100vh;
     }
-    .RedesSociales{
+
+
+    .RedesSociales {
         display: none;
     }
-    .buscar{
+
+    .buscar {
         display: none;
     }
-    nav{
+
+    nav {
         justify-content: space-between;
         padding: 0 10px;
     }
-    .logo{
+
+    .logo {
         height: 40px;
         margin-bottom: 5px;
     }
+
     /*Cuerpo*/
     .GridContainer {
-        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-columns: 1fr;
+        /* Una sola columna */
         grid-template-rows: auto;
     }
 
     .Servicios {
-        grid-column: 1; /* Ya no necesita ocupar 2 columnas */
+        grid-column: 1;
+        /* Ya no necesita ocupar 2 columnas */
     }
 
     .CuerpoImagen {
         max-width: 95%;
         height: auto;
     }
-    .pie-pagina .grupo1{
+
+    .pie-pagina .grupo1 {
         width: 90%;
-        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        grid-template-columns: 1fr;
+        /* Una sola columna en pantallas pequeñas */
         grid-gap: 30px;
         padding: 35px 0px;
 
     }
-    .pie-pagina .grupo1 .box{
-        margin-bottom: 20px; /* Espacio entre las cajas */
+
+    .pie-pagina .grupo1 .box {
+        margin-bottom: 20px;
+        /* Espacio entre las cajas */
     }
 }
