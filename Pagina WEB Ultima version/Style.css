@@ -99,6 +99,7 @@ nav a:hover {
 .DeliveryIconos {
     font-size: 15px;
 }
+
 .DeliveryIconos {
     display: flex;
     justify-content: center;
@@ -108,7 +109,7 @@ nav a:hover {
 
 }
 
-.RedesSociales a{
+.RedesSociales a {
     padding: 7px;
     margin: 4px;
     background: #262d6a;
@@ -153,7 +154,7 @@ input {
 }
 
 .buscar button:hover {
-    color: aqua;    
+    color: aqua;
 }
 
 /*Slider*/
@@ -243,6 +244,7 @@ input {
     /* background-color: forestgreen; */
     margin: 20px;
 }
+
 /*Tal parece que no hay problema que el padre de esta clase sea grid, esta clase mandaditos puede ser declarada como display flex*/
 .TitulosH2Main.Mandaditos,
 .TitulosH2Main.Ubicacion,
@@ -306,10 +308,28 @@ input {
 
 }
 
+/* .box {
+    background-color: #13d575;
+} */
+
+.box {
+    display: flex;
+    flex-direction: column;
+    /* Para que los elementos se acomoden uno debajo del otro */
+    justify-content: center;
+    /* Centrado vertical */
+    align-items: center;
+    /* Centrado horizontal */
+    height: 100%;
+    /* O define un alto fijo como 300px si es necesario */
+    text-align: center;
+    /* Para centrar el texto */
+}
+
 .pie-pagina .grupo1 .box figure {
     /*Dentro de la clase box que esta dentro de la clase grupo1 que esta dentro de la clase pie-pagina buscaremos la etiqueta figure*/
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     /*centrando horizontalmente*/
@@ -318,8 +338,7 @@ input {
 }
 
 .pie-pagina .grupo1 .box figure img {
-    width: 250px;
-
+    width: 200px;
 }
 
 .pie-pagina .grupo1 .box h2 {
