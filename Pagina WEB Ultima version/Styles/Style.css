@@ -32,11 +32,13 @@ nav {
     /* align-items: center;  */
     line-height: 80px;
     padding: 0 100px;
+    background-color: #bd102d;
 
 }
 
 .logo img {
     height: 60px;
+    background-color: #bd102d;
 }
 
 .NavPadre {
@@ -443,9 +445,10 @@ input {
     }
 
     .logo {
-        height: 40px;
+        height: 5px;
         margin-bottom: 5px;
     }
+    
 
     /*Cuerpo*/
     .GridContainer {
