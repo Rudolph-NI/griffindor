@@ -19,9 +19,12 @@ nav {
     /*en ves de float: right en navpadre*/
     height: 100px;
     background-color: #13d575;
-    /* align-items: center; */
+    /* background-color: #f7f7f5; */ /*Color previo de el nav de la pagina antigua */
     padding: 10px;
     width: 100%;
+    margin: 1px;    
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(4, 10, 164, 0.1);
 }
 
 .logo {
@@ -168,6 +171,7 @@ input {
     /* Evita que la imagen se repita */
     background-position: center;
     /* Centra la imagen dentro del div */
+    
 
 }
 
