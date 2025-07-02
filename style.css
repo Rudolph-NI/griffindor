@@ -36,7 +36,7 @@ body {
 
 section div{
     background: linear-gradient(to top, rgba(53, 60, 65, 0.8), rgba(53, 60, 65, 0.8)),
-    url(background.jpg);
+    url(background.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
