@@ -234,6 +234,7 @@ input {
 /*Slide*/
 
 /* Cuerpo */
+
 .GridContainer {
     text-align: center;
     padding: 20px;
@@ -443,11 +444,11 @@ input {
         justify-content: space-between;
         padding: 0 10px;
     }
-
+/* 
     .logo {
         height: 5px;
-        margin-bottom: 5px;
-    }
+        
+    } */
     
 
     /*Cuerpo*/

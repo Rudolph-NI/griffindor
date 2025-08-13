@@ -3,13 +3,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 html {
     min-height: 100%;
     position: relative;
-  
+
     /* Me permite deslizar cuando hago clic en los links del menu */
-    scroll-behavior: smooth ;
-      
+    scroll-behavior: smooth;
+
 }
 
 @font-face {
@@ -17,43 +18,23 @@ html {
     font-style: normal;
     font-weight: normal;
     src: local('Menlo Regular'), url('Menlo-Regular.woff') format('woff');
-    }
+}
 
-/*main*/
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    Margin: 0;
+    padding: 0;
+
+}
+
 body {
     background-color: #1CB698;
     margin: 0;
     margin-bottom: 40px;
 
 }
-*{
-    box-sizing: border-box;
-    font-family: 'Work Sans';
-    Margin: 0 ;
-    padding: 0 ;
 
-}
-
-section div{
-    background: linear-gradient(to top, rgba(53, 60, 65, 0.8), rgba(53, 60, 65, 0.8)),
-    url(background.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 110vh;
-}
-
-body .main__encabezado{
-    text-align: center;
-    /* margin-top: 20px; */
-    font-size: 42px;
-    
-}
-body .main__encabezado div{
-    padding-top: 200px;
-    font-family: 'Work Sans';
-    
-}
 
 /*header*/
 .header {
@@ -64,7 +45,7 @@ body .main__encabezado div{
     left: 0;
     z-index: 99;
     padding: 20px 0 10px 0;
-    
+
 }
 
 .header .logo {
@@ -75,11 +56,12 @@ body .main__encabezado div{
     margin-left: 20px;
 }
 
-.header .logo img{
+.header .logo img {
     height: 70px;
     width: auto;
-    transition: all 1.3s; 
+    transition: all 1.3s;
 }
+
 .header .logo img:hover {
     transform: scale(1.2);
 }
@@ -88,16 +70,18 @@ body .main__encabezado div{
     list-style: none;
     text-align: right;
 
-    
 
-    
+
+
 }
+
 .header .nav-links li {
     display: inline-block;
     padding: 0 20px;
-    transition: all 1.3s; 
-    
+    transition: all 1.3s;
+
 }
+
 .header .nav-links li:hover,
 .overlay a:hover {
     transform: scale(1.1);
@@ -107,12 +91,55 @@ body .main__encabezado div{
     font-size: 700;
     color: #eceff1;
 
-    
+
 }
 
 .header .nav-links li a:hover {
     color: #ffbc0e
 }
+
+main{
+    background-color: #bdd6d2;
+}
+.ContainerMain {
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px ;
+}
+.secGrid{
+     background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(4, 10, 164, 0.1);
+    /* background-color: forestgreen; */
+    margin: 20px;
+}
+
+
+section div {
+    background: linear-gradient(to top, rgba(53, 60, 65, 0.8), rgba(53, 60, 65, 0.8)),
+        url(background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+
+body .main__encabezado {
+    text-align: center;
+    /* margin-top: 20px; */
+    font-size: 42px;
+
+}
+
+body .main__encabezado div {
+    padding-top: 200px;
+    font-family: 'Work Sans';
+
+}
+
 footer {
     width: 100%;
     background-color: #000000;
@@ -136,7 +163,7 @@ footer {
     border-radius: 50px;
     cursor: pointer;
     transition: all 1.3s ease 0s
-} 
+}
 
 .header .btn button:hover {
     background-color: #e2f1f8;
@@ -144,10 +171,13 @@ footer {
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 800px){
-    .nav-links, .btn {
+@media screen and (max-width: 800px) {
+
+    .nav-links,
+    .btn {
         display: none;
     }
+
     .menu {
         display: inherit;
     }
@@ -201,11 +231,12 @@ footer {
 }
 
 /*media query*/
-@media screen and (max-height:450px){
+@media screen and (max-height:450px) {
     .header .overlay a {
         font-size: 20px;
 
     }
+
     .header .overlay .close {
         font-size: 40px;
         top: 15px;
@@ -214,11 +245,12 @@ footer {
 
 }
 
-h1{
+h1 {
     text-align: center;
 }
+
 /* modificaciones despues del tutorial, modificaciones empiricas*/
-#redes{
+#redes {
 
     display: flex;
     justify-content: center;
@@ -227,7 +259,7 @@ h1{
     gap: 20px;
 }
 
-.fa-facebook{
+.fa-facebook {
 
     border: 1px solid blue;
     padding: 20px;
@@ -235,7 +267,8 @@ h1{
     background-color: blue;
     box-shadow: 0 0 30px rgba(0, 100, 255, 0.7);
 }
-.fa-instagram{
+
+.fa-instagram {
 
     border: 1px solid #ff0080;
     padding: 20px;
@@ -243,7 +276,8 @@ h1{
     background-color: #ff0080;
     box-shadow: 0 0 30px rgba(238, 130, 238, 0.7);
 }
-.fa-linkedin{
+
+.fa-linkedin {
 
     border: 1px solid blue;
     padding: 20px;
@@ -252,7 +286,7 @@ h1{
     box-shadow: 0 0 30px rgba(0, 100, 255, 0.7);
 }
 
-.fa-brands:hover{
+.fa-brands:hover {
     transform: scale(1.5);
     cursor: pointer;
     transition: .4s ease;
