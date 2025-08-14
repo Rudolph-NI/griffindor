@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./004-Styles/style.css" />
 
     <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
-    <title>MyRepository</title>
+    <title>My Portfolio</title>
 
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/941f562e00.js" crossorigin="anonymous"></script>
@@ -16,16 +16,15 @@
 
 <body>
     <div id="preloader">
-        <img src="letraR.png" alt="Logo" id="preloader-logo">
+        <img src="./002-Imgs/R_Icon.png" alt="Logo" id="preloader-logo">
     </div>
-    
+
     <header class="header">
         <div class="logo">
-            <img src="letraR.png" alt="logo">
+            <img src="./002-Imgs/R_Icon.png" alt="logo">
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="MyRepository.html">My repository</a></li>
                 <li><a href="#redes">Get in touch</a></li>
                 <li><a href="#LinkAboutMe">About me</a></li>
                 <li><a href="#LinkAboutMe">Contact</a></li>
@@ -38,7 +37,6 @@
             <a onclick="closeNav()" href="" class="close">&times;</a>
 
             <div class="overlay-content">
-                <a href="MyRepository.html">My repository</a>
                 <a href="#redes">Get in touch</a>
                 <a href="#LinkAboutMe">About me</a>
             </div>
@@ -48,8 +46,14 @@
 
     <section class="main__encabezado">
         <div>
-            <p>This is a page made by Rodolfo Gutierrez who's about to jump into the development world</p>
+            <p>Made by Rodolfo Gutierrez</p>
+
+            <a href="#" download class="btn-modern">Download CV</a>
+
+
         </div>
+
+
     </section>
 
     <main>
@@ -57,13 +61,15 @@
         <section class="ContainerMain">
             <section class="secGrid redes">
                 <h2>Get in touch with me</h2>
-                <i class="fa-brands fa-facebook" style="color: azure;"></i>
-                <i class="fa-brands fa-instagram" style="color: azure;"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
                 <a target="_blank" href="https://www.linkedin.com/in/rodolfo-gutierrez552001"><i
-                        class="fa-brands fa-linkedin" style="color: azure;"></i></a>
+                        class="fa-brands fa-linkedin"></i></a>
             </section>
             <section class="secGrid AboutMe">
-                <h1>About me</h1>
+                <h2>Projects</h2>
+                <a href="./001-MandaditosWebPage/Index.html" target="_blank" download class="btn-modern">Mandaditos</a>
+
             </section>
         </section>
     </main>
@@ -71,9 +77,7 @@
     <footer>
         <p>All rights reserved ©</p>
     </footer>
-
-
-    <script type="text/javascript" src="nav.js"></script>
+    <script type="text/javascript" src="./003-Js/nav.js"></script>
 
 </body>
 
