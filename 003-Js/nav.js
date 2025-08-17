@@ -6,27 +6,23 @@
 //     document.getElementById("mobile-menu").style.width = "0%";
 // }
 
-// const titulo = document.querySelector('h1');
-// console.log(titulo[1].innerHTML);
+
+// window.addEventListener("load", () => {
+//     const preloader = document.getElementById("preloader");
+
+//     setTimeout(() => {
+//         preloader.style.opacity = "0";
+//         preloader.style.transition = "opacity 0.5s ease";
+
+//         setTimeout(() => {
+//             preloader.style.display = "none";
+//             document.body.classList.add("loaded");
+//         }, 500);
+//     }, 2000); // 2 segundos de preloader
+// });
 
 
-window.addEventListener("load", () => {
-    const preloader = document.getElementById("preloader");
-
-    setTimeout(() => {
-        preloader.style.opacity = "0";
-        preloader.style.transition = "opacity 0.5s ease";
-
-        setTimeout(() => {
-            preloader.style.display = "none";
-            document.body.classList.add("loaded");
-        }, 500);
-    }, 2000); // 2 segundos de preloader
-});
-
-
-
-// // ===== BOTÓN "SUBIR" =====
+// // // ===== BOTÓN "SUBIR" =====
 // const backToTopBtn = document.createElement("button");
 // backToTopBtn.innerHTML = "⬆";
 // backToTopBtn.id = "backToTop";
@@ -54,7 +50,7 @@ window.addEventListener("load", () => {
 //     }
 // });
 
-// // Volver arriba
+// // // Volver arriba
 // backToTopBtn.addEventListener("click", () => {
 //     window.scrollTo({ top: 0, behavior: "smooth" });
 // });
