@@ -64,7 +64,7 @@ body {
     left: 0;
     z-index: 99;
     padding: 20px 0 10px 0;
-    
+
 
 }
 
@@ -130,7 +130,7 @@ main {
     grid-template-rows: 400px 400px 400px 400px;
     /* background-color: #0A66C2;
     margin: 20px; */
-    
+
 
 }
 
@@ -347,44 +347,44 @@ h1 {
 }
 
 
-.fa-facebook {
+.fa-github {
 
-    border: 1px solid #1877F2;
+    /* border: 1px slategrey #1877F2; */
     justify-content: center;
     padding: 12px;
     border-radius: 8px;
-    background-color: #1877F2;
+    background-color: transparent;
     color: black;
     font-size: 1.5rem;
     /* root em
     font size ajusta el tamaño de la fuente del texto
     1rem es como 24 pixeles pero seguira escalando si el tamaño base del documento cambia */
-    box-shadow: 0 0 4px rgba(0, 100, 255, 0.7);
+    box-shadow: 0 0 2px rgba(0, 100, 255, 0.7);
     /*  el texto de arriba añade sombra alrededor del elemento*/
 }
 
 .fa-instagram {
 
-    border: 1px solid #ff0080;
+    /* border: 1px slategrey #ff0080; */
     justify-content: center;
     padding: 12px;
     border-radius: 8px;
-    background-color: #ff0080;
+    background-color: transparent;
     color: black;
     font-size: 1.5rem;
-    box-shadow: 0 0 4px rgba(238, 130, 238, 0.7);
+    box-shadow: 0 0 2px rgba(238, 130, 238, 0.7);
 }
 
 .fa-linkedin {
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: center;
     padding: 12px;
     border-radius: 8px;
-    background-color: #0A66C2;
+    background-color: transparent;
     color: black;
     font-size: 1.5rem;
-    box-shadow: 0 0 4px rgba(0, 100, 255, 0.7);
+    box-shadow: 0 0 2px rgba(0, 100, 255, 0.7);
 }
 
 .fa-brands:hover {
