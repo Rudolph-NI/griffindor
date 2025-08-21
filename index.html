@@ -46,8 +46,10 @@
         <div class="overlay" id="mobile-menu">
             <a onclick="closeNav()" class="close">&times;</a>
             <div class="overlay-content">
-                <a href="#redes">Get in touch</a>
-                <a href="#LinkAboutMe">About me</a>
+                <a href="#about-me" onclick="closeNav()">About me</a>
+                <a href="#Technologies" onclick="closeNav()">Technologies</a>
+                <a href="#projects" onclick="closeNav()">Projects</a>
+                <a href="#contact" onclick="closeNav()">Get in touch</a>
             </div>
         </div>
 
@@ -69,9 +71,7 @@
         <section id="GridContainer">
             <section id="projects" class="ChildGridContainer">
                 <h2>Projects</h2>
-                <div class="grandSonContainer">
-                    <!-- <a href="./001-MandaditosWebPage/Index.html" target="_blank" download class="btn-modern">Mandaditos</a> -->
-                    
+                <div class="grandSonContainer">                    
                     <a href="./001-MandaditosWebPage/Index.html" target="_blank" class="btn-modern">Mandaditos</a>
 
                 </div>
@@ -86,18 +86,21 @@
             <section id="Technologies" class="ChildGridContainer">
                 <h2>Technologies</h2>
                 <div class="grandSonContainer">
-                    <p>HTML, CSS, JavaScript, React</p>
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>JavaScript</div>
+                    <div>ReactJS</div>
+                    <div>.NET</div>
                 </div>
             </section>
             <section id="contact" class="ChildGridContainer">
                 <h2>Get in touch with me</h2>
                 <div class="grandSonContainer">
-                    <i class="fa-brands fa-github"></i>
+                    <a class="fa-brands fa-github" href="https://www.github.com/Rudolph-NI"></a>
                     <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/rodolfo-gutierrez552001"></i>
+                    <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/rodolfo-gutierrez552001"></a>
                 </div>
             </section>
-
         </section>
     </main>
 
