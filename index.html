@@ -65,13 +65,13 @@
 
     </section>
 
-    
+
     <main>
         <h2>I am a system engineer</h2>
         <section id="GridContainer">
             <section id="projects" class="ChildGridContainer">
                 <h2>Projects</h2>
-                <div class="grandSonContainer">                    
+                <div class="grandSonContainer">
                     <a href="./001-MandaditosWebPage/Index.html" target="_blank" class="btn-modern">Mandaditos</a>
 
                 </div>
@@ -95,17 +95,38 @@
             </section>
             <section id="contact" class="ChildGridContainer">
                 <h2>Get in touch with me</h2>
-                <div class="grandSonContainer">
-                    <a class="fa-brands fa-github" href="https://www.github.com/Rudolph-NI"></a>
-                    <i class="fa-brands fa-instagram"></i>
-                    <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/rodolfo-gutierrez552001"></a>
-                </div>
+
+                <form action="">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input id="name" type="text" placeholder="Name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" placeholder="Tell me more about it!" required minlength="10"
+                            maxlength="500"></textarea>
+                    </div>
+
+                    <button type="submit">Send</button>
+                </form>
+
             </section>
         </section>
     </main>
 
     <footer>
-        <p>All rights reserved ©</p>
+        <div>
+            <p>All rights reserved ©</p>
+        </div>
+        <div class="grandSonContainer">
+            <a class="fa-brands fa-github" href="https://www.github.com/Rudolph-NI"></a>
+            <i class="fa-brands fa-instagram"></i>
+            <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/rodolfo-gutierrez552001"></a>
+        </div>
     </footer>
     <script type="text/javascript" src="./003-Js/nav.js"></script>
 

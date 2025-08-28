@@ -120,6 +120,7 @@ body {
 
 main {
     background-color: #0A1828;
+    margin-bottom: 400px;
 }
 
 #GridContainer {
@@ -127,12 +128,13 @@ main {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 400px 400px 400px;
-    /* background-color: #0A66C2;
-    margin: 20px; */
+    grid-template-rows: 50vh 50vh 50vh 50vh;
+    /* background-color: #0A66C2; */
+    /* margin: 20px;  */
 
 
 }
+
 .ChildGridContainer div div {
     display: inline-block;
     background-color: #BFA181;
@@ -147,11 +149,12 @@ main {
 }
 
 .ChildGridContainer {
-    background-color: #333232;
+    background-color: #001427;
     border-radius: 10px;
     margin: 20px;
     border-radius: 20px;
     box-shadow: 0 0 4px #BFA181;
+    min-height: 45vh;
 
 }
 
@@ -200,8 +203,7 @@ body .main__encabezado button {
 
 }
 
-main h2,
-.ChildGrinContainer h2 {
+main h2 {
     color: #BFA181;
     font-size: 20px;
     margin-bottom: 20px;
@@ -239,11 +241,11 @@ body .main__encabezado button:hover {
 
 footer {
     width: 100%;
-    background-color: #333232;
+    background-color: #0A1828;
     position: absolute;
     bottom: 0%;
     color: #BFA181;
-    height: 50px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,6 +354,27 @@ h1 {
 }
 
 /* modificaciones despues del tutorial, modificaciones empiricas*/
+
+ form{
+    display: flex;
+    background-color: #BFA181;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 40%;
+    margin-left: 40%;
+    padding: 12px;
+
+}
+/*
+form input,
+form textarea,
+form button {
+  display: block;
+  margin: 10px auto; /* Auto en izquierda/derecha centra los inputs */
+} */
+
 #redes {
     display: flex;
     justify-content: center;
@@ -367,8 +390,9 @@ h1 {
     padding: 12px;
     border-radius: 8px;
     background-color: transparent;
-    color: black;
+    color: #BFA181;
     font-size: 1.5rem;
+    text-decoration: none;
     /* root em
     font size ajusta el tamaño de la fuente del texto
     1rem es como 24 pixeles pero seguira escalando si el tamaño base del documento cambia */
@@ -383,7 +407,7 @@ h1 {
     padding: 12px;
     border-radius: 8px;
     background-color: transparent;
-    color: black;
+    color: #BFA181;
     font-size: 1.5rem;
     box-shadow: 0 0 2px rgba(238, 130, 238, 0.7);
 }
@@ -395,8 +419,9 @@ h1 {
     padding: 12px;
     border-radius: 8px;
     background-color: transparent;
-    color: black;
+    color: #BFA181;
     font-size: 1.5rem;
+    text-decoration: none;
     box-shadow: 0 0 2px rgba(0, 100, 255, 0.7);
 }
 
