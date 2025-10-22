@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/941f562e00.js" crossorigin="anonymous"></script>
+
+    <!-- Google sans code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./004-Styles/style.css" />
+    <link rel="icon" type="image/png" href="002-Imgs/R_Icon.png">
+    <title>My Portfolio</title>
+
+
+</head>
+
+<body>
+    <!-- <div id="preloader">
+        <img src="./002-Imgs/R_Icon.png" alt="Logo" id="preloader-logo">
+    </div> -->
+
+    <header class="header">
+        <div class="logo">
+            <img src="./002-Imgs/R_Icon.png" alt="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#Technologies">Technologies</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Get in touch</a></li>
+            </ul>
+        </nav>
+
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="#about-me" onclick="closeNav()">About me</a>
+                <a href="#Technologies" onclick="closeNav()">Technologies</a>
+                <a href="#projects" onclick="closeNav()">Projects</a>
+                <a href="#contact" onclick="closeNav()">Get in touch</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="main__encabezado">
+        <div id="Background">
+            <p>Made by Rodolfo Gutierrez</p>
+
+            <a href="#" download class="btn-modern">Download CV</a>
+        </div>
+
+
+    </section>
+
+    
+    <main>
+        <h2>I am a system engineer</h2>
+        <section id="GridContainer">
+            <section id="projects" class="ChildGridContainer">
+                <h2>Projects</h2>
+                <div class="grandSonContainer">                    
+                    <a href="./001-MandaditosWebPage/Index.html" target="_blank" class="btn-modern">Mandaditos</a>
+
+                </div>
+            </section>
+
+            <section id="about-me" class="ChildGridContainer">
+                <h2>About Me</h2>
+                <div class="grandSonContainer">
+                    <p>Hi! I'm Rodolfo, a passionate system engineer.</p>
+                </div>
+            </section>
+            <section id="Technologies" class="ChildGridContainer">
+                <h2>Technologies</h2>
+                <div class="grandSonContainer">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>JavaScript</div>
+                    <div>ReactJS</div>
+                    <div>.NET</div>
+                </div>
+            </section>
+            <section id="contact" class="ChildGridContainer">
+                <h2>Get in touch with me</h2>
+                <div class="grandSonContainer">
+                    <a class="fa-brands fa-github" href="https://www.github.com/Rudolph-NI"></a>
+                    <i class="fa-brands fa-instagram"></i>
+                    <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/rodolfo-gutierrez552001"></a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>All rights reserved ©</p>
+    </footer>
+    <script type="text/javascript" src="./003-Js/nav.js"></script>
+
+</body>
+
+
+</html>

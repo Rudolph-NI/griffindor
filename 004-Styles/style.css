@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html {
+    min-height: 100%;
+    position: relative;
+
+    /* Me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    Margin: 0;
+    padding: 0;
+
+}
+
+
+/*INICO*/
+
+/* Oculta todo el contenido excepto el preloader */
+/* body>*:not(#preloader) {
+    opacity: 0;
+}  */
+
+/* Fade-in cuando cargue */
+/* body.loaded>*:not(#preloader) {
+    opacity: 1;
+    transition: opacity 1s ease;
+}  */
+
+/* Preloader */
+
+/* #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #282f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}  */
+
+
+body {
+    margin-bottom: 40px;
+}
+
+
+
+/*FIN*/
+
+/*header*/
+.header {
+    background-color: #0A1828;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 20px 0 10px 0;
+
+
+}
+
+.header .logo {
+    cursor: pointer;
+    margin-right: auto;
+    display: block;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 1.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+    text-align: right;
+
+
+
+
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 1.3s;
+
+}
+
+.header .nav-links li:hover,
+.overlay a:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
+    font-size: 700;
+    color: #BFA181;
+
+
+}
+
+.header .nav-links li a:hover {
+    color: #ffbc0e
+}
+
+main {
+    background-color: #0A1828;
+}
+
+#GridContainer {
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 400px 400px 400px;
+    /* background-color: #0A66C2;
+    margin: 20px; */
+
+
+}
+.ChildGridContainer div div {
+    display: inline-block;
+    background-color: #BFA181;
+    color: #0A1828;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 4px #BFA181;
+
+}
+
+.ChildGridContainer {
+    background-color: #333232;
+    border-radius: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 4px #BFA181;
+
+}
+
+.ChildGridContainer h2 {
+    margin-top: 10px;
+    color: #BFA181;
+}
+
+.grandSonContainer {
+    margin-top: 100px;
+}
+
+section #Background {
+    background: linear-gradient(to top, rgba(53, 60, 65, 0.8), rgba(53, 60, 65, 0.8)),
+        url("../002-Imgs/background.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    color: #BFA181;
+
+}
+
+body .main__encabezado {
+    text-align: center;
+    /* margin-top: 20px; */
+    font-size: 42px;
+
+}
+
+body .main__encabezado div {
+    padding-top: 200px;
+    font-family: 'Work Sans';
+
+}
+
+body .main__encabezado button {
+    background-color: transparent;
+    color: #BFA181;
+    border: 2px solid #333;
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+main h2,
+.ChildGrinContainer h2 {
+    color: #BFA181;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+body .main__encabezado button:hover {
+    background-color: #333;
+    color: white;
+
+
+}
+
+.btn-modern {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #2b2c2d;
+    /* borde visible */
+    padding: 0.8em 1.6em;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-modern:hover {
+    background-color: #3f4042;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    width: 100%;
+    background-color: #333232;
+    position: absolute;
+    bottom: 0%;
+    color: #BFA181;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: none;
+}
+
+.header .btn button,
+.header .menu button {
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background-color: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 1.3s ease 0s
+}
+
+.header .btn button:hover {
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+
+    .nav-links,
+    .btn {
+        display: none;
+    }
+
+    .menu {
+        display: inherit;
+    }
+}
+
+/*NAV*/
+
+.header a {
+    text-decoration: none;
+}
+
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 49, 63, .95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #eceff1
+}
+
+.header .overlay a:hover,
+.header .overlay a:focus {
+    color: #ffbc0e;
+}
+
+.header .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+    cursor: pointer;
+}
+
+/*media query*/
+@media screen and (max-height:450px) {
+    .header .overlay a {
+        font-size: 20px;
+
+    }
+
+    .header .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+}
+
+h1 {
+    text-align: center;
+}
+
+/* modificaciones despues del tutorial, modificaciones empiricas*/
+#redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.fa-github {
+
+    /* border: 1px slategrey #1877F2; */
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: black;
+    font-size: 1.5rem;
+    /* root em
+    font size ajusta el tamaño de la fuente del texto
+    1rem es como 24 pixeles pero seguira escalando si el tamaño base del documento cambia */
+    box-shadow: 0 0 2px rgba(0, 100, 255, 0.7);
+    /*  el texto de arriba añade sombra alrededor del elemento*/
+}
+
+.fa-instagram {
+
+    /* border: 1px slategrey #ff0080; */
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: black;
+    font-size: 1.5rem;
+    box-shadow: 0 0 2px rgba(238, 130, 238, 0.7);
+}
+
+.fa-linkedin {
+
+    /* border: 1px solid black; */
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: black;
+    font-size: 1.5rem;
+    box-shadow: 0 0 2px rgba(0, 100, 255, 0.7);
+}
+
+.fa-brands:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .4s ease;
+}
