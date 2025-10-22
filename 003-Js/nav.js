@@ -17,7 +17,7 @@ function closeNav() {
 //         setTimeout(() => {
 //             preloader.style.display = "none";
 //             document.body.classList.add("loaded");
-//         }, 500);
+//         }, 500); 
 //     }, 2000); // 2 segundos de preloader
 // });
 

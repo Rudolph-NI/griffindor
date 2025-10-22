@@ -146,6 +146,7 @@ main {
     padding: 20px;
     box-shadow: 0 0 4px #BFA181;
     transition: transform 0.3s ease;
+    
 
 }
 .ChildGridContainer div div:hover {
