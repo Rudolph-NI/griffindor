@@ -6,6 +6,10 @@ function closeNav() {
     document.getElementById("mobile-menu").style.width = "0%";
 }
 
+const sendMessageBtn = document.getElementById("#SendMessage");
+    sendMessageBtn.addEventListener("click", () => {
+    alert("Thank you for reaching out! I'll get back to you soon.");
+});
 
 // window.addEventListener("load", () => {
 //     const preloader = document.getElementById("preloader");
