@@ -6,10 +6,28 @@ function closeNav() {
     document.getElementById("mobile-menu").style.width = "0%";
 }
 
-const sendMessageBtn = document.getElementById("#SendMessage");
-    sendMessageBtn.addEventListener("click", () => {
-    alert("Thank you for reaching out! I'll get back to you soon.");
+// En la página donde haces clic
+const sendMessageBtn = document.querySelector("#SendMessage");
+
+sendMessageBtn.addEventListener("click", () => {
+  localStorage.setItem("showAlertOnReturn", "true");
+  // Aquí podrías redirigir, por ejemplo:
+  // window.location.href = "otra-pagina.html";
 });
+
+window.addEventListener("load", () => {
+  const shouldShow = localStorage.getItem("showAlertOnReturn");
+  if (shouldShow === "true") {
+    setTimeout(() => {
+      alert("Thank you for reaching out! I'll get back to you soon.");
+    }, 3000);
+    localStorage.removeItem("showAlertOnReturn");
+  }
+});
+
+
+
+
 
 // window.addEventListener("load", () => {
 //     const preloader = document.getElementById("preloader");
@@ -21,7 +39,7 @@ const sendMessageBtn = document.getElementById("#SendMessage");
 //         setTimeout(() => {
 //             preloader.style.display = "none";
 //             document.body.classList.add("loaded");
-//         }, 500); 
+//         }, 500);
 //     }, 2000); // 2 segundos de preloader
 // });
 
