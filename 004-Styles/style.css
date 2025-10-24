@@ -171,6 +171,11 @@ main {
     font-size: 1.2rem;
 
 }
+.ChildGridContainer form{
+    width: fit-content;
+    margin: 10%;
+}
+
 
 .grandSonContainer {
     margin-top: 100px;
