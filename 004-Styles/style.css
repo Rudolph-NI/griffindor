@@ -125,13 +125,12 @@ main {
 
 #GridContainer {
     text-align: center;
+    margin: 0px auto;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50vh 50vh 50vh 50vh;
-    /* background-color: #0A66C2; */
-    /* margin: 20px;  */
-
+    max-width: 1800px;
 
 }
 
@@ -156,13 +155,24 @@ main {
 
 .ChildGridContainer {
     background-color: #001427;
+    color: #BFA181;
+    padding: 20px;
     border-radius: 10px;
     margin: 20px;
     border-radius: 20px;
-    box-shadow: 0 0 4px #BFA181;
+    box-shadow: 0 0 4px #fffbf6;
     min-height: 45vh;
     font-size: 20px;
 
+
+}
+
+.formsubmit{
+    display: flex;
+    justify-content: center; /* Horizontal */
+    align-items: center;  
+    width: 60%; /* Vertical */
+    margin: auto;
 }
 
 .ChildGridContainer h2 {
@@ -172,8 +182,12 @@ main {
 
 }
 .ChildGridContainer form{
-    width: fit-content;
-    margin: 10%;
+    min-width: 400px;
+
+}
+
+.ChildGridContainer form div{
+   padding: 10px;
 }
 
 
@@ -227,15 +241,15 @@ main h2 {
 
 
 body .main__encabezado button:hover {
-    background-color: #333;
-    color: white;
+    background-color: #f70000;
+    color: #BFA181;
 
 
 }
 
 .btn-modern {
     background-color: transparent;
-    color: white;
+    color: #BFA181;
     text-decoration: none;
     border: 2px solid #2b2c2d;
     /* borde visible */
@@ -274,7 +288,7 @@ footer {
 .header .menu button {
     margin-left: 20px;
     font-weight: 700;
-    color: #1b3039;
+    color: #0A1828;
     padding: 9px 25px;
     background-color: #eceff1;
     border: none;
@@ -314,7 +328,7 @@ footer {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgba(33, 49, 63, .95);
+    background-color: white;
     overflow: hidden;
     transition: all 0.3s ease 0s;
 }
@@ -333,7 +347,7 @@ footer {
     display: block;
     transition: all 0.3s ease 0s;
     font-weight: 700;
-    color: #eceff1
+    color: #0A1828;
 }
 
 .header .overlay a:hover,
@@ -369,29 +383,25 @@ h1 {
 }
 
 /* modificaciones despues del tutorial, modificaciones empiricas*/
+/* .ChildGridContainer{
+    padding: 5px;
+    margin: auto;
+    
+} */
 
 form {
-    display: flex;
     background-color: #BFA181;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-right: 40%;
-    margin-left: 40%;
-    padding: 12px;
+    padding: 8px;
     font-size: 2rem;
     border: 5px solid #333;
     border-radius: 20px;
 }
 
-/*
-form input,
-form textarea,
-form button {
-  display: block;
-  margin: 10px auto; /* Auto en izquierda/derecha centra los inputs */
-}
+
 
 */ #redes {
     display: flex;

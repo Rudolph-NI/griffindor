@@ -34,7 +34,7 @@
 
     <header class="header">
         <div class="logo">
-            <img src="./002-Imgs/R_Icon.png" alt="logo">
+            <a href="#inicio"><img src="./002-Imgs/R_Icon.png" alt="logo"></a>
         </div>
         <nav>
             <ul class="nav-links">
@@ -59,7 +59,7 @@
 
     </header>
 
-    <section class="main__encabezado">
+    <section id="inicio" class="main__encabezado">
         <div id="Background">
             <p>Made by Rodolfo Gutierrez</p>
 
@@ -97,45 +97,45 @@
                     <div>.NET</div>
                 </div>
             </section>
-            <section class="ChildGridContainer">
-                <h2>Get in touch with me</h2>
 
-                <form action="https://formsubmit.co/b3cc18eb482ca802d9f165848a68decb " method="POST">
+            <section class="ChildGridContainer">
+                <h2>Get in touch</h2>
+                <p>Feel free to contact me about anything related to Web Development.</p>
+                <form id="contact" class="formsubmit" action="https://formsubmit.co/b3cc18eb482ca802d9f165848a68decb" method="POST">
                     <div>
-                        <label for="name">Name:</label>
                         <input id="name" type="text" placeholder="Name" required name="name">
                     </div>
                     <div>
-                        <label for="email">Email:</label>
-                        <input id="email" type="email" placeholder="Email" required name="email">
+                        <input id="email" type="email" placeholder="Email address" required name="email">
                     </div>
                     <div>
-                        <label for="message">Message:</label>
                         <textarea id="message" placeholder="Tell me more about it!" required minlength="10"
                             maxlength="500" name="comments"></textarea>
                     </div>
-
                     <!--Go NoWhere-->
                     <input type="hidden" name="_next" value="https://rudolph-ni.github.io/griffindor/">
-
                     <button id="SendMessage" type="submit" class="btn btn-primary">Send</button>
                 </form>
-
-
             </section>
+
+
         </section>
     </main>
 
     <footer>
         <div class="grandSonContainer">
-            <p>All rights reserved ©</p>
-            <div >
+
+            <div>
                 <a class="fa-brands fa-github" href="https://www.github.com/Rudolph-NI"></a>
                 <i class="fa-brands fa-instagram"></i>
                 <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/rodolfo-gutierrez552001"></a>
+        
+                <p>All rights reserved ©</p>
             </div>
+            
         </div>
 
+        
     </footer>
     <script type="text/javascript" src="./003-Js/nav.js"></script>
 
