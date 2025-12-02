@@ -50,6 +50,7 @@ html {
 body {
     margin-bottom: 40px;
 
+
 }
 
 
@@ -172,12 +173,21 @@ main {
 .formsubmit {
     display: flex;
     justify-content: center;
-    /* Horizontal */
     align-items: center;
     width: 60%;
-    /* Vertical */
     margin: auto;
+    background-color: #BFA181;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+    font-size: 2rem;
+    border: 5px solid #333;
+    border-radius: 20px;
 }
+
+
 
 .ChildGridContainer h2 {
     margin-top: 10px;
@@ -274,6 +284,50 @@ body .main__encabezado button:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
+
+
+
+.fa-github {
+
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #BFA181;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 0 2px rgba(0, 100, 255, 0.7);
+}
+
+.fa-instagram {
+
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #BFA181;
+    font-size: 1.5rem;
+    box-shadow: 0 0 2px rgba(238, 130, 238, 0.7);
+}
+
+.fa-linkedin {
+
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #BFA181;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 0 2px rgba(0, 100, 255, 0.7);
+}
+
+.fa-brands:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .4s ease;
+}
+
 footer {
     width: 100%;
     background-color: #0A1828;
@@ -284,11 +338,12 @@ footer {
     font-size: 1.2rem;
 }
 
-footer div div{
+footer div div {
     align-content: center;
     justify-content: center;
     text-align: center;
 }
+
 footer .grandSonContainerOne {
     align-items: center;
     height: 300px;
@@ -385,7 +440,7 @@ footer .grandSonContainerTwo {
 }
 
 /*media query*/
-@media screen and (max-height:450px) {
+@media screen and (min-width: 0px) and (max-width: 500px) {
     .header .overlay a {
         font-size: 20px;
 
@@ -397,78 +452,50 @@ footer .grandSonContainerTwo {
         right: 35px;
     }
 
-}
 
-h1 {
-    text-align: center;
-}
+    .ChildGridContainer {
+        padding: 5px;
+    }
 
-/* modificaciones despues del tutorial, modificaciones empiricas*/
- .ChildGridContainer{
-    padding: 5px;
-    
-} 
+    main {
+        margin-bottom: 200px;
+    }
 
-form {
-    background-color: #BFA181;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 8px;
-    font-size: 2rem;
-    border: 5px solid #333;
-    border-radius: 20px;
-}
+    footer {
+        height: 200px;
+    }
 
 
+    footer div div {
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer .grandSonContainerOne {
+        align-items: center;
+        height: 100px;
+    }
+
+    footer .grandSonContainerTwo {
+        height: 50px;
+        margin-bottom: 0%;
+    }
+
+    #GridContainer {
+        text-align: center;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    }
+
+    .formsubmit input,
+    .formsubmit textarea {
+        max-width: 75%;
+        width: 80%;
+        box-sizing: border-box;
+    }
 
 
-
-.fa-github {
-
-    /* border: 1px slategrey #1877F2; */
-    justify-content: center;
-    padding: 12px;
-    border-radius: 8px;
-    background-color: transparent;
-    color: #BFA181;
-    font-size: 1.5rem;
-    text-decoration: none;
-    /* root em
-    font size ajusta el tamaño de la fuente del texto
-    1rem es como 24 pixeles pero seguira escalando si el tamaño base del documento cambia */
-    box-shadow: 0 0 2px rgba(0, 100, 255, 0.7);
-    /*  el texto de arriba añade sombra alrededor del elemento*/
-}
-
-.fa-instagram {
-
-    /* border: 1px slategrey #ff0080; */
-    justify-content: center;
-    padding: 12px;
-    border-radius: 8px;
-    background-color: transparent;
-    color: #BFA181;
-    font-size: 1.5rem;
-    box-shadow: 0 0 2px rgba(238, 130, 238, 0.7);
-}
-
-.fa-linkedin {
-
-    /* border: 1px solid black; */
-    justify-content: center;
-    padding: 12px;
-    border-radius: 8px;
-    background-color: transparent;
-    color: #BFA181;
-    font-size: 1.5rem;
-    text-decoration: none;
-    box-shadow: 0 0 2px rgba(0, 100, 255, 0.7);
-}
-
-.fa-brands:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-    transition: .4s ease;
 }
