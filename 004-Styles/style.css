@@ -49,6 +49,7 @@ html {
 
 body {
     margin-bottom: 40px;
+
 }
 
 
@@ -145,16 +146,17 @@ main {
     padding: 20px;
     box-shadow: 0 0 4px #BFA181;
     transition: transform 0.3s ease;
-    
+
 
 }
+
 .ChildGridContainer div div:hover {
     transform: translateY(-5px);
 
 }
 
 .ChildGridContainer {
-    background-color: #001427;
+    background-color: #021a31;
     color: #BFA181;
     padding: 20px;
     border-radius: 10px;
@@ -167,11 +169,13 @@ main {
 
 }
 
-.formsubmit{
+.formsubmit {
     display: flex;
-    justify-content: center; /* Horizontal */
-    align-items: center;  
-    width: 60%; /* Vertical */
+    justify-content: center;
+    /* Horizontal */
+    align-items: center;
+    width: 60%;
+    /* Vertical */
     margin: auto;
 }
 
@@ -181,19 +185,22 @@ main {
     font-size: 1.2rem;
 
 }
-.ChildGridContainer form{
+
+.ChildGridContainer form {
     min-width: 400px;
 
 }
 
-.ChildGridContainer form div{
-   padding: 10px;
+.ChildGridContainer form div {
+    padding: 10px;
 }
 
 
 .grandSonContainer {
-    margin-top: 100px;
+    margin-bottom: 50px;
+
 }
+
 
 section #Background {
     background: linear-gradient(to top, rgba(53, 60, 65, 0.8), rgba(53, 60, 65, 0.8)),
@@ -274,11 +281,25 @@ footer {
     bottom: 0%;
     color: #BFA181;
     height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.2rem;
 }
+
+footer div div{
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+footer .grandSonContainerOne {
+    align-items: center;
+    height: 300px;
+}
+
+footer .grandSonContainerTwo {
+    height: 100px;
+    margin-bottom: 0%;
+}
+
+
 
 .menu {
     display: none;
