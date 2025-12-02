@@ -404,11 +404,11 @@ h1 {
 }
 
 /* modificaciones despues del tutorial, modificaciones empiricas*/
-/* .ChildGridContainer{
+ .ChildGridContainer{
     padding: 5px;
     margin: auto;
     
-} */
+} 
 
 form {
     background-color: #BFA181;
@@ -424,12 +424,6 @@ form {
 
 
 
-*/ #redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 
 
 .fa-github {
