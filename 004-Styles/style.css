@@ -482,13 +482,11 @@ footer .grandSonContainerTwo {
         margin-bottom: 0%;
     }
 
-    #GridContainer {
-        text-align: center;
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
+    .grandSonContainer div {
+        background-color: #ad6110;
+        color: aqua;
     }
+
 
     .formsubmit input,
     .formsubmit textarea {
