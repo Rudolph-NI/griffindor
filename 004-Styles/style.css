@@ -378,8 +378,14 @@ footer .grandSonContainerTwo {
 
 @media screen and (max-width: 800px) {
 
-    .nav-links,
-    .btn {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .nav-links {
         display: none;
     }
 
@@ -448,6 +454,7 @@ footer .grandSonContainerTwo {
         top: 15px;
         right: 35px;
     }
+
 
 
     .ChildGridContainer {
