@@ -49,8 +49,6 @@ html {
 
 body {
     margin-bottom: 40px;
-
-
 }
 
 
@@ -131,7 +129,7 @@ main {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50vh 50vh 50vh 50vh;
+    grid-template-rows: auto;
     max-width: 1800px;
 
 }
@@ -197,8 +195,7 @@ main {
 }
 
 .ChildGridContainer form {
-    min-width: 400px;
-
+    width: 100%;
 }
 
 .ChildGridContainer form div {
@@ -487,6 +484,10 @@ footer .grandSonContainerTwo {
         color: aqua;
     }
 
+    .formsubmit {
+        width: 90%;
+        font-size: 1.2rem;
+    }
 
     .formsubmit input,
     .formsubmit textarea {
