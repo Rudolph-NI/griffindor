@@ -27,7 +27,7 @@ window.addEventListener("load", () => {
 
 
 
-document.getElementById("pop-up").addEventListener("click", function(e) {
+document.getElementById("Pop-up").addEventListener("click", function(e) {
     e.preventDefault(); // evita que redirija de una vez
 
     alert("This website is under development");
