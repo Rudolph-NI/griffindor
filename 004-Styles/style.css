@@ -465,6 +465,13 @@ footer .grandSonContainerTwo {
         margin-bottom: 200px;
     }
 
+    div a {
+        display: flex;
+        gap: 20px;
+        margin: 20px;
+        flex-wrap: wrap;
+        
+    }
     footer {
         height: 200px;
     }
