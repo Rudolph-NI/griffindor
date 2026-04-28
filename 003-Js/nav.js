@@ -27,7 +27,14 @@ window.addEventListener("load", () => {
 
 
 
+document.getElementById("pop-up").addEventListener("click", function(e) {
+    e.preventDefault(); // evita que redirija de una vez
 
+    alert("Esta página está en desarrollo");
+
+    // redirige después del popup
+    window.location.href = this.href;
+});
 
 // window.addEventListener("load", () => {
 //     const preloader = document.getElementById("preloader");
