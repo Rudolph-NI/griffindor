@@ -30,7 +30,7 @@ window.addEventListener("load", () => {
 document.getElementById("pop-up").addEventListener("click", function(e) {
     e.preventDefault(); // evita que redirija de una vez
 
-    alert("Esta página está en desarrollo");
+    alert("This website is under development");
 
     // redirige después del popup
     window.location.href = this.href;
