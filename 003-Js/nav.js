@@ -28,12 +28,11 @@ window.addEventListener("load", () => {
 
 
 document.getElementById("Pop-up").addEventListener("click", function(e) {
-    e.preventDefault(); // evita que redirija de una vez
+    e.preventDefault();
 
-    alert("This website is under development");
+    alert("Este proyecto está en desarrollo o temporalmente no disponible");
 
-    // redirige después del popup
-    window.location.href = this.href;
+    // opcional: no redirigir si sabes que está caído
 });
 
 // window.addEventListener("load", () => {
