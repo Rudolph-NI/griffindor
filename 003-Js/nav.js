@@ -30,7 +30,7 @@ window.addEventListener("load", () => {
 document.getElementById("Pop-up").addEventListener("click", function(e) {
     e.preventDefault();
 
-    alert("Este proyecto está en desarrollo o temporalmente no disponible");
+    alert("This website is currently under development, temporarily not available");
 
     // opcional: no redirigir si sabes que está caído
 });
