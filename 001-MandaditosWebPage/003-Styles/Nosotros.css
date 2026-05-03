@@ -12,6 +12,22 @@ body {
 
 }
 
+html {
+    min-height: 100%;
+    position: relative;
+
+    /* Me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    Margin: 0;
+    padding: 0;
+
+}
+
 .NosotrosMain h2 {
     text-align: center;
     /* margin-top: 20px; */
@@ -37,15 +53,6 @@ body {
     align-items: center;
 }
 
-.CuerpoImagen {
-    margin: 8px;
-    width: 650px;
-    /* Que ocupe todo el ancho del bloque */
-    height: 300px;
-    /* Mantiene proporción de la imagen */
-    object-fit: contain;
-    border-radius: 8px;
-    /* Esquinas redondeadas como el bloque */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Igual que el contenedor */
+div p{
+    padding: 10px;
 }
