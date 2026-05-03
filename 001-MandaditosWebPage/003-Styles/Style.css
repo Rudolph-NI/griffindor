@@ -19,10 +19,11 @@ nav {
     /*en ves de float: right en navpadre*/
     height: 100px;
     background-color: #13d575;
-    /* background-color: #f7f7f5; */ /*Color previo de el nav de la pagina antigua */
+    /* background-color: #f7f7f5; */
+    /*Color previo de el nav de la pagina antigua */
     padding: 10px;
     width: 100%;
-    margin: 1px;    
+    margin: 1px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(4, 10, 164, 0.1);
 }
@@ -171,7 +172,7 @@ input {
     /* Evita que la imagen se repita */
     background-position: center;
     /* Centra la imagen dentro del div */
-    
+
 
 }
 
@@ -234,11 +235,12 @@ input {
 /* Cuerpo */
 
 .GridContainer {
-    text-align: center;
-    padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 500px 80px 500px;
+    gap: 20px;
+
+    align-items: stretch;
+    /* 🔥 clave */
 }
 
 .TitulosH2Main {
@@ -248,16 +250,20 @@ input {
     box-shadow: 0 2px 5px rgba(4, 10, 164, 0.1);
     /* background-color: forestgreen; */
     margin: 20px;
+    text-align: center;
 }
 
 /*Tal parece que no hay problema que el padre de esta clase sea grid, esta clase mandaditos puede ser declarada como display flex*/
-.TitulosH2Main.Mandaditos,
-.TitulosH2Main.Ubicacion,
-.TitulosH2Main.Delivery,
-.TitulosH2Main.Gpersonal {
+.TitulosH2Main {
     display: flex;
     flex-direction: column;
     /* height: 100%; */
+}
+.DeliveryIconos {
+    display: flex;
+    flex-wrap: wrap;      /* 🔥 CLAVE */
+    justify-content: center;
+    gap: 10px;
 }
 
 
@@ -272,7 +278,25 @@ input {
 }
 
 .Servicios {
-    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.Servicios::before,
+.Servicios::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: #ccc;
+    margin: 0 10px;
+}
+
+.Servicios h2 {
+    padding: 10px 20px;
+    background: white;
+    border-radius: 10px;
 }
 
 .TitulosH2Main h2 {
@@ -283,16 +307,16 @@ input {
 
 
 .CuerpoImagen {
-    margin: px;
-    width: 650px;
-    /* Que ocupe todo el ancho del bloque */
-    height: 300px;
-    /* Mantiene proporción de la imagen */
+    margin-top: 1px;
+    width: 100%;
+    /* 🔥 ocupa el ancho del padre */
+    max-width: 650px;
+    /* 🔥 límite opcional en desktop */
+    height: auto;
+    /* 🔥 mantiene proporción automática */
     object-fit: contain;
     border-radius: 8px;
-    /* Esquinas redondeadas como el bloque */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Igual que el contenedor */
 }
 
 /* Footer */
@@ -398,6 +422,9 @@ input {
         right: 20px;
         color: #262d6a;
     }
+    .logo :nth-child(1){
+        display: none;
+    }
 
     .NavPadre {
         display: flex;
@@ -442,12 +469,13 @@ input {
         justify-content: space-between;
         padding: 0 10px;
     }
-/* 
+
+    /* 
     .logo {
         height: 5px;
         
     } */
-    
+
 
     /*Cuerpo*/
     .GridContainer {
