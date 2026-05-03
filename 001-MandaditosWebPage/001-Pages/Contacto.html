@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../003-Styles/Style.css">
+    <link rel="stylesheet" href="../003-Styles/Contacto.css">
 
     <script src="https://kit.fontawesome.com/0f85c3e46d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-        <!-- HEADER -->
+    <!-- HEADER -->
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -45,10 +48,48 @@
         </div>
     </nav>
 
-    <!-- main -->
-    <h1>Contacto</h1>
-    <p>En esta sección encontrarás información de contacto.</p>
+    <main class="ContactoMain">
+        <h2>Contacto</h2>
 
+        <section class="contacto">
+
+            <!-- IZQUIERDA -->
+            <div class="formulario">
+                <h3>DÉJANOS TUS DATOS</h3>
+                <p>
+                    Permítenos recibir tu feedback, sugerencias o cualquier consulta que puedas tener. Estamos aquí para ayudarte y mejorar nuestros servicios. Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.
+                </p>
+
+                <form>
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellidos">
+                    <input type="email" placeholder="Correo electrónico">
+                    <select>
+                        <option disabled selected hidden>Selecciona un departamento</option>
+                        <option>Managua</option>
+                        <option>León</option>
+                        <option>Carazo</option>
+                        <option>Granada</option>
+                    </select>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <!-- DERECHA -->
+            <div class="info">
+                <h3>CONTÁCTANOS</h3>
+
+                <p><strong>Teléfono:</strong> +505 22558255</p>
+                <p><strong>Dirección:</strong> De la rotonda del centro de salud de Agrimersa, 30 metros al oeste. Barrio Ernesto Thelman, Jinotepe-Carazo.</p>
+
+                <div class="mapa">
+                    <img src="../002-imgs/Ubicacion.png" alt="Mapa">
+                </div>
+            </div>
+
+        </section>
+    </main>
 
     <!-- Footer -->
 
@@ -61,20 +102,15 @@
                     </a>
 
                 </figure>
-                <!-- <p>
-                    <a href="#"> <i class="fa-brands fa-whatsapp"></i><b>Whatsapp +505 22558255</b></a>
-                    <a href="#">Mandaditoscorreo99@gmail.com</a>
-
-                </p> -->
+                
                 <p><b>Whatsapp:</b> +505 22558255</p>
                 <p><b>Correo:</b> Mandaditoscorreo99@gmail.com</p>
             </div>
 
             <div class="box">
                 <h2>SOBRE NOSOTROS</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-                    porro soluta animi, vel quam corrupti officiis, quis nobis neque odit
-                    excepturi ipsa dicta sit consequuntur repudiandae iusto, quas maiores cupiditate.</p>
+                <p>La idea de crear Mandaditos como un negocio innovador fue el detonante para dar paso a esta adaptacion a las tendencias que hoy en dia se encuentran alrededor del mundo como tales casos de los protagonistas de entidades como (Glovo, Uber, 
+                    Just eat) han sido el comienzo de esta nueva de la cual Mandaditos se ha inspirado para llevar este servicio a Carazo</p>
             </div>
 
             <div class="box">
@@ -94,4 +130,5 @@
 
     <script src="Javascript.js"></script>
 </body>
+
 </html>
