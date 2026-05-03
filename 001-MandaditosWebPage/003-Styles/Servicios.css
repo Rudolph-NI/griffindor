@@ -12,7 +12,7 @@ body {
 
 }
 
-.NosotrosMain h2 {
+.ServiciosMain h2 {
     text-align: center;
     /* margin-top: 20px; */
     font-size: 2.5em;
@@ -21,27 +21,29 @@ body {
     /* background-color: #087e8bee; */
 
 }
-.NosotrosMain > h3 {
+
+.ServiciosMain>h3 {
     font-size: 20px;
     color: black;
-    background-color: #f5f5f5 ;
+    background-color: #f5f5f5;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(4, 10, 164, 0.1);
     margin: 10px;
 }
 
-.NosotrosMain .cobertura{
+.ServiciosMain .Gpersonales {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
-.CuerpoImagen {
-    margin: 8px;
-    width: 650px;
+.Gpersonales div:nth-child(2) {
+    margin: 10px;
+    padding: 10px;
+    width: auto;
     /* Que ocupe todo el ancho del bloque */
-    height: 300px;
+    height: auto;
     /* Mantiene proporción de la imagen */
     object-fit: contain;
     border-radius: 8px;

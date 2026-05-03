@@ -282,19 +282,6 @@ input {
 }
 
 
-.CuerpoImagen {
-    margin-top: 1px;
-    width: 650px;
-    /* Que ocupe todo el ancho del bloque */
-    height: 300px;
-    /* Mantiene proporción de la imagen */
-    object-fit: contain;
-    border-radius: 8px;
-    /* Esquinas redondeadas como el bloque */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Igual que el contenedor */
-}
-
 /* Footer */
 
 .pie-pagina {
