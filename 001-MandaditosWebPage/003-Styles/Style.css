@@ -26,18 +26,21 @@ nav {
     margin: 1px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(4, 10, 164, 0.1);
+    position: relative;
 }
 
 .logo {
-    /* display: flex; */
-    /* align-items: center;  */
-    line-height: 80px;
-    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
+    padding-left: 10px;
+    max-width: 70%; /* 🔥 evita que invada el botón */
 }
 
 .logo img {
-    height: 60px;
+    max-height: 50px;
+    width: auto;
 }
 
 .NavPadre {
@@ -61,12 +64,14 @@ nav {
 /*Checkbtn*/
 .checkbtn {
     font-size: 30px;
-    color: blue;
-    float: right;
-    line-height: 70px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+    color: #262d6a;
+
+    position: absolute;
+    right: 20px;
+    top: 30px;
+
+    padding: 10px; /* 🔥 zona clickeable más grande */
+    z-index: 1000;
 }
 
 #check {
@@ -425,6 +430,7 @@ input {
     .logo :nth-child(1){
         display: none;
     }
+   
 
     .NavPadre {
         display: flex;
