@@ -65,7 +65,7 @@ nav {
 .checkbtn {
     font-size: 30px;
     color: #262d6a;
-
+    display: none;
     position: absolute;
     right: 20px;
     top: 30px;
